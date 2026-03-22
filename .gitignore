@@ -1,0 +1,11 @@
+# SQLite собранные файлы и бэкапы (собираются скриптами)
+sqlite/*.db
+sqlite/*.db-shm
+sqlite/*.db-wal
+backups/
+
+# OS / IDE
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/

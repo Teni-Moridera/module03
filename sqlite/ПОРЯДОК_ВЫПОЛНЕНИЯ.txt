@@ -1,0 +1,14 @@
+Вариант А — один скрипт (из каталога проекта):
+  powershell -ExecutionPolicy Bypass -File scripts\init_sqlite.ps1
+
+Вариант Б — вручную (sqlite3 в PATH):
+  cd sqlite
+  del bookstore_lab.db 2>nul
+  sqlite3 bookstore_lab.db ".read 01_schema.sql"
+  sqlite3 bookstore_lab.db ".read 02_triggers.sql"
+  sqlite3 bookstore_lab.db ".read 03_seed_roles.sql"
+  sqlite3 bookstore_lab.db ".read 04_views_access.sql"
+  sqlite3 bookstore_lab.db ".read 05_demo_data.sql"
+  sqlite3 bookstore_lab.db ".read 06_integrity_extra.sql"
+
+Резервная копия: scripts\backup_sqlite.ps1
