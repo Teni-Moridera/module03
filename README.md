@@ -8,4 +8,3 @@
 2. Из корня репозитория: `powershell -ExecutionPolicy Bypass -File scripts\init_sqlite.ps1`
 3. Резервная копия: `scripts\backup_sqlite.ps1`
 
-Подробнее: `sqlite/ПОРЯДОК_ВЫПОЛНЕНИЯ.txt`, `ПОЛИТИКА_БЕЗОПАСНОСТИ_SQLITE.md`.
